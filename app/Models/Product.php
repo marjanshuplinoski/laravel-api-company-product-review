@@ -9,6 +9,9 @@ class Product extends Model
 {
     use HasFactory;
 
+
+    protected $fillable = ['name', 'description', 'ships_from', 'price'];
+
     /**
      * Get the reviews of the product.
      */
